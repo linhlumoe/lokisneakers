@@ -1,0 +1,399 @@
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.clr {
+	clear: both;
+}
+
+body {
+	background: url(../../upload/background.jpg) center top repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color:#000;
+}
+
+footer .footer-info {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color:#000;
+}
+
+.main {
+	width: 1200px;
+	margin: 0px auto;
+	background: #F2F2F2; 
+}
+
+/* ============ TOP============*/
+.top {
+	height: 80px;
+	background: #F2F2F2; 
+}
+
+.content {
+	height: auto;
+	background: #F2F2F2; 
+}
+
+.logo {
+	margin-left: 10px;
+	float: left;
+}
+
+/*===========NAVIGATION=========*/
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: #FFF;
+}
+
+.navbar-default .nav-tabs > .active > a {
+    color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-default .nav-tabs > li > a {
+    color: #444;
+}
+
+.navbar-default .nav-tabs > li > a:hover,
+.navbar-default .nav-tabs > li > a:focus {
+	color: #222;
+}
+
+.dropdown-menu > li > a,
+.navbar-default .nav-tabs .open .dropdown-menu > li > a:hover,
+.navbar-default .nav-tabs .open .dropdown-menu > li > a:focus {
+    color: #fff;
+}
+
+.navbar-default .nav-tabs > .open > a,
+.navbar-default .nav-tabs > .open > a:hover,
+.navbar-default .nav-tabs > .open > a:focus {
+    color: #333;
+    background-color: #e7e7e7;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-menu > li > a:hover {
+    color: #555!important;
+}
+
+@media (max-width:768px){
+    .navbar-default .nav-tabs .open .dropdown-menu> li > a:hover,
+    .dropdown-menu > li > a:hover {
+        color: #FFF!important;
+    }
+}
+
+.nav-tabs-justified {
+	background-color: #FFF;
+    border-color: #333;
+	color:#000;
+}
+
+#catalog{
+	font-size:16px; 
+	font-weight: bold;
+	height: auto;
+}
+
+/*=======LUOI SAN PHAM===========*/
+.thumbnail {    
+position:relative;  
+overflow:hidden;
+}
+ 
+.caption {  
+position:absolute;  
+top:0;  
+right:0;    
+background:rgba(66, 139, 202, 0.75);
+width:100%; 
+height:100%;    
+padding:2%; 
+display: none;  
+text-align:center;  
+color:#fff !important;  
+z-index:2;
+}
+
+.price {     
+overflow: hidden;   
+clear: left;    
+text-align: center;  
+text-overflow: ellipsis;    
+white-space: nowrap;
+font-weight:bold;
+font-size:16px;
+}
+
+h3 > a {
+	color:#000;
+	text-decoration:none;
+}
+
+/*========== TIN TUC ===========*/
+.demo { 
+width:990px;    
+margin-top: 20px;   
+margin-right: auto; 
+margin-bottom: 0px; 
+margin-left: auto; 
+}
+ 
+.post-slide{    
+background: #fff;    
+padding-bottom: 20px;    
+margin: 0 15px;
+}
+.post-slide .post-img{    
+position:relative;
+}
+.post-slide .over-layer{    
+background: rgba(0, 0, 0, 0.6);    
+width: 100%;    
+height: 100%;    
+position: absolute;    
+opacity:0;    
+cursor: pointer;    
+transition: all 0.30s ease 0s;
+}
+.post-slide:hover .over-layer{    
+opacity:1;
+}
+.post-slide .over-layer:after{    
+content: &quot;+&quot;;    
+font-size: 52px;    
+color: #fff;    
+position: absolute;    
+top: 31%;    
+left:42%;
+}
+.post-slide .post-img img{    
+width: 100%;    
+height: auto;
+}
+.post-slide .post-title{    
+margin:25px 0 15px 0;
+}
+ 
+.post-slide .post-title:before{    
+content:&quot;&quot;;    
+border:2px solid #e67e22;    
+width:18%;    
+display: block;    
+margin-bottom:15px;
+}
+.post-slide .post-title a{    
+font-size: 16px;    
+font-weight:bold;    
+color:#333;    
+display: inline-block;    
+text-transform:capitalize;    
+transition: all 0.3s ease 0s;   
+text-decoration:none;
+}
+.post-slide .post-title a:hover{    
+text-decoration: none;    
+color:#e67e22;
+}
+
+.post-slide .post-date:before{    
+content: &quot;\f073&quot;;    
+font-family: 'FontAwesome';    
+margin-right: 7px;    
+color:#e67e22;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{    
+background: #e67e22;
+}
+ 
+@media only screen and (max-width: 480px) {    
+.post-slide{        
+padding:20px;    
+}       
+.demo { 
+width:auto; 
+margin-top: 20px;   
+margin-right: auto; 
+margin-bottom: 0px; 
+margin-left: auto; 
+}
+}
+@media only screen and (max-width: 990px) {    
+.post-slide .post-img {        
+width:100%;    
+}    
+.post-slide .post-review{        
+width:100%;        
+border-bottom: 4px solid #ec3c6a;    
+}    
+.post-slide .post-bar:before{        
+left: 0;    
+}    
+.post-slide .post-bar:after{        
+left: 25px;    
+}
+.demo { width:auto; 
+margin-top: 20px;   
+margin-right: auto; 
+margin-bottom: 0px; 
+margin-left: auto; 
+}}
+
+/*===============CHI TIET SAN PHAM=============*/
+img {   
+max-width: 100%;
+}
+ 
+.preview {  
+display: -webkit-box;   
+display: -webkit-flex;  
+display: -ms-flexbox;   
+display: flex;  
+-webkit-box-orient: vertical;   
+-webkit-box-direction: normal;  
+-webkit-flex-direction: column; 
+-ms-flex-direction: column; 
+flex-direction: column;
+} 
+ 
+@media screen and (max-width: 996px) { 
+.preview { 
+margin-bottom: 20px;
+}
+}
+ 
+.preview-pic {  
+-webkit-box-flex: 1;    
+-webkit-flex-grow: 1;   
+-ms-flex-positive: 1;   
+flex-grow: 1;
+}
+ 
+.preview-thumbnail.nav-tabs {   
+border: none;   
+margin-top: 15px;
+}
+ 
+.preview-thumbnail.nav-tabs li {    
+width: 18%; 
+margin-right: 2.5%;
+}
+ 
+.preview-thumbnail.nav-tabs li img {    
+max-width: 100%;    
+display: block;
+}
+ 
+.preview-thumbnail.nav-tabs li a {  
+padding: 0; 
+margin: 0;  
+cursor:pointer;
+}
+ 
+.preview-thumbnail.nav-tabs li:last-of-type {   
+margin-right: 0;
+}
+ 
+.tab-content {  
+overflow: hidden;
+}
+ 
+.tab-content img {  
+width: 100%;    
+-webkit-animation-name: opacity;    
+animation-name: opacity; 
+-webkit-animation-duration: .3s; 
+animation-duration: .3s;
+}
+ 
+.card { 
+margin-top: 0px;    
+background: #eee;   
+padding: 3em;   
+line-height: 1.5em;
+} 
+ 
+@media screen and (min-width: 997px) { 
+.wrapper { 
+display: -webkit-box; 
+display: -webkit-flex; 
+display: -ms-flexbox; 
+display: flex;
+}
+}
+ 
+.details {  
+display: -webkit-box;
+display: -webkit-flex;  
+display: -ms-flexbox;   
+display: flex;  
+-webkit-box-orient: vertical;   
+-webkit-box-direction: normal;  
+-webkit-flex-direction: column; 
+-ms-flex-direction: column; 
+flex-direction: column;
+}
+ 
+.product-title, .price, .sizes {   
+text-transform: UPPERCASE;  
+font-weight: bold;
+}
+ 
+.checked, .price span { 
+color: #ff9f1a;
+}
+ 
+.product-title, .product-description, .price, .sizes {  
+margin-bottom: 15px;
+}
+ 
+.product-title {    
+margin-top: 0;
+}
+ 
+.size {
+margin-right: 10px;
+}
+ 
+.size:first-of-type {   
+margin-left: 40px;
+}
+ 
+.add-to-cart:hover {   
+background: #b36800;    
+color: #fff;    
+text-decoration:none;
+}
+ 
+.tooltip-inner {    
+padding: 1.3em;
+} 
+ 
+@-webkit-keyframes opacity { 
+0% { opacity: 0; -webkit-transform: scale(3); transform: scale(3);} 
+100% { opacity: 1; -webkit-transform: scale(1); transform: scale(1);}
+} 
+ 
+@keyframes opacity { 
+0% { opacity: 0; -webkit-transform: scale(3); transform: scale(3);} 
+100% { opacity: 1; -webkit-transform: scale(1); transform: scale(1);}
+}
+
+
+
+
+
+
+
+
+
+
